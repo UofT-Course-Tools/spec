@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "dev": "vuepress dev",
+        "build": "rm -rf docs;mkdir docs;vuepress build"
+    }
+}
