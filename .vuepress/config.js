@@ -10,5 +10,4 @@ module.exports = {
         ]
     },
     dest: "./docs",
-    base: "/docs/"
 }
