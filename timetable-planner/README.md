@@ -43,7 +43,9 @@ __Data Provided:__  *course code* and *meeting section* data from course selecti
 ### Furture Implementation:
 
 Given a set of course code, the timetable planner outputs the schedule available for the set.
+
 If no such schedule available, outputs "inValid".
+
 //Setting up preference are still work in progress
 
 #### Input:
@@ -126,6 +128,7 @@ If no such schedule available, outputs "inValid".
 ### (WIP)
 
 Given a set of times, check if there is a valid timetable avaliable.
+
 Outputs "Valid" if such timetable exist, or else "inValid".
 
 #### Input:
