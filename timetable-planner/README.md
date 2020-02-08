@@ -159,7 +159,7 @@ __Data Provided:__  *course code* and *meeting section* data from course selecti
 #### Input:
 
 ```json
-#provided two courses with two section for simplicity
+#provided one set of time to check if a valid timetable exist
 {
     "CourseCode": {
         "CSC108H5F2019":{
