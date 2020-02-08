@@ -19,14 +19,13 @@ The timetable planner allows students to enter their course load and get back a 
 
 __Data Provided:__  *course code* and *meeting section* data from course selection. (refer to **Data Structures 1-2** for details). 
 
-
 ## Data Structures:
 
 ### 1. Course Code: 
 
 ``` json
 {
-    "code": string
+    "CourseCode": string
 }
 ```
 
@@ -38,4 +37,155 @@ __Data Provided:__  *course code* and *meeting section* data from course selecti
     "size": Number,
     "enrolment": Number
 }
+```
+## Example Usage:
+
+### Furture Implementation:
+
+#### Input:
+
+```json
+#provided two courses with two section for simplicity
+{
+    "CourseCode": {
+        "CSC108H5F2019":{
+            "L0101":[{
+                "MONDAY":[32400, 36000],
+                "WEDNESDAY":[32400, 36000],
+                "FRIDAY":[32400, 36000],
+                "size":160,
+                "enrolment":0
+
+            }],
+            "L0107":[{
+                "WEDNESDAY":[64800, 75600],
+                "size":160,
+                "enrolment":0
+                }]
+        },
+        "CSC318H5F2019":{
+            "L0101":[{
+                "TUESDAY":[68400, 75600],
+                "WEDNESDAY":[68400, 75600],
+                "size": 60,
+                "enrolment": 0
+            }],
+            "T0107":[{
+                "THURSDAY":[68400, 75600],
+                "size": 60,
+                "enrolment": 0
+                }]
+        },
+        
+}
+
+```
+
+#### Output:
+
+```json
+
+{
+    "MONDAY":[
+        {
+            "CSC108H5F2019L0101":[32400, 36000]
+        }
+        ],
+    "TUESDAY":[
+        {
+            "CSC318H5F2019L0101":[68400, 75600]
+        }
+        ],
+    "WEDNESDAY":[
+        {
+            "CSC108H5F2019L0101":[32400, 36000]
+        },
+        {
+            "CSC318H5F2019L0101":[68400, 75600]
+        }
+        ],
+    "THURSDAY":[
+        {
+            "CSC318H5F2019T0101":[68400, 75600]
+        }
+        ],
+    "FRIDAY":[
+        {
+            "CSC108H5F2019L0101":[32400, 36000]
+        }
+        ],
+}
+
+```
+
+## Current Implementateion
+### (WIP)
+
+#### Input:
+
+```json
+#provided one set of time to check if a valid timetable exist
+{
+    "CourseCode": {
+        "CSC108H5F2019":{
+            "L0101":[{
+                "MONDAY":[32400, 36000],
+                "WEDNESDAY":[32400, 36000],
+                "FRIDAY":[32400, 36000],
+                "size":160,
+                "enrolment":0
+
+            }],
+        },
+        "CSC318H5F2019":{
+            "L0101":[{
+                "TUESDAY":[68400, 75600],
+                "WEDNESDAY":[68400, 75600],
+                "size": 60,
+                "enrolment": 0
+            }],
+        },
+        
+}
+```
+
+#### Output:
+
+```json
+"Valid"
+```
+### or
+
+#### Input:
+
+```json
+#provided two courses with two section for simplicity
+{
+    "CourseCode": {
+        "CSC108H5F2019":{
+            "L0107":[{
+                "WEDNESDAY":[64800, 75600],
+                "size":160,
+                "enrolment":0
+                }]
+        },
+        "CSC318H5F2019":{
+            "L0101":[{
+                "TUESDAY":[68400, 75600],
+                "WEDNESDAY":[68400, 75600],
+                "size": 60,
+                "enrolment": 0
+            }],
+        },
+        
+}
+
+```
+
+#### Output:
+
+```json
+
+"inValid"
+
 ```
