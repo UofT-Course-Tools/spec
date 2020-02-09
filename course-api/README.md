@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Course API
 
 The Course API provides unified access to UofT course data scattered across UofT's web services. Apps published by UofT Course Tools will use 
@@ -12,7 +16,8 @@ The Course API provides unified access to UofT course data scattered across UofT
 
 __Data Provided:__ Information regarding every course in all 3 UofT campuses. Information such as lecture time, professors, pre-requisite etc are provided (refer to **Data Structures 1-3** for details). 
 
-__Link:__  http://coursefinder.utoronto.ca/course-search/search/courseSearch?viewId=CourseSearch-FormView&methodToCall=start
+
+[__Visit__](http://coursefinder.utoronto.ca/course-search/search/courseSearch?viewId=CourseSearch-FormView&methodToCall=start)
 
 ### 2. UTM Academic Calendar:
 
