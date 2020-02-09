@@ -2,13 +2,13 @@
 sidebar: auto
 ---
 
-# Course API 
+# Unified Backend
 
 ## Overview
 
 ![Backend Architecture](./backend-architecture.png)
 
-The Course API provides unified access to UofT course data scattered across UofT's web services. Apps published by UofT Course Tools will use
+The Course API provides unified access to UofT course data scattered across UofT's web services. The API relies on three main sources [UofT Course Finder](#_1-uoft-course-finder), [UTM Academic Calendar](#_2-utm-academic-calendar), [UTM Program Selection Guide](#_3-utm-program-selection-guide) , and [UTM Course Evaluations](#_4-utm-course-evaluations). 
 
 ## Data Sources
 
