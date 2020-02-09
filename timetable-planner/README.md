@@ -13,6 +13,20 @@ The timetable planner allows students to enter their course load and get back a 
 
 ![courseguide_to_timetable](courseguide_to_timetable.png)
 
+### Timetable Planner
+
+![timetable-journey](Timetable-journey.png)
+
+Minimize/Maximize idle time: The user can set the amount of time they want to stay at school between the classes.
+
+Lock course time: The user can lock the course time so it stays the same while doing other adjustments.
+
+Constraint days: 
+ - Days off: The user can select the day(s) off so there will be no course appear on that day.
+ - Start/end time: The user can chose their preference time to start the school or end the school
+ 
+The timetable will return invalid and displays a message if the constraints are unreachable.
+
 ## Example Usage:
 
 ### Future Implementation:
