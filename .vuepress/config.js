@@ -4,7 +4,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Unified Backend', link: '/course-api/' },
+            { text: 'Unified Backend', link: '/unified-backend/' },
             { text: 'Timetable Planner', link: '/timetable-planner/' },
             { text: 'Course Guide', link: '/course-guide/' }
         ]
