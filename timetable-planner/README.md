@@ -11,10 +11,6 @@ The timetable planner allows students to enter their course load and get back a 
 
 ## Overview
 
-![courseguide_to_timetable](courseguide_to_timetable.png)
-
-### Timetable Planner
-
 ![timetable-journey](Timetable-journey.png)
 
 Minimize/Maximize idle time: The user can set the amount of time they want to stay at school between the classes.
