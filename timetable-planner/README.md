@@ -13,36 +13,11 @@ The timetable planner allows students to enter their course load and get back a 
 
 ![courseguide_to_timetable](courseguide_to_timetable.png)
 
-## Data Sources
-
-### 1. Course Selection API:
-
-__Data Provided:__  *course code* and *meeting section* data from course selection. (refer to **Data Structures 1-2** for details). 
-
-## Data Structures:
-
-### 1. Course Code: 
-
-``` json
-{
-    "CourseCode": string
-}
-```
-
-### 2. Meeting Section: 
-
-```json
-{
-    "times": [Time],
-    "size": Number,
-    "enrolment": Number
-}
-```
 ## Example Usage:
 
-### Furture Implementation:
+### Future Implementation:
 
-Given a set of course code, the timetable planner outputs the schedule available for the set.
+Given a set of course codes, the timetable planner outputs the schedule available for the set.
 
 If no such schedule available, outputs "inValid".
 
