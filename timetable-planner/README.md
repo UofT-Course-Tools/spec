@@ -11,11 +11,11 @@ The timetable planner allows students to enter their course load and get back a 
 
 ## Overview
 
-![timetable-journey](Timetable-journey.png)
+![timetable-journey](./Timetable-journey.png)
 
 Once the user selects the courses from the Course Guide:
 
-![coursechosing](coursechosing.png)
+![coursechosing](./coursechosing.png)
 
 The user views the timetable:
 
@@ -23,15 +23,15 @@ The timetable will display whether or not if the selected courses have a valid t
 
  - Valid:
  
-![timetable](timetable.png)
+![timetable](./timetable.png)
 
  - Invalid:
  
-![error1](error1.png)
+![error1](./error1.png)
 
 There are serveral preferences that the user can select to optimize the timetable:
 
-![timetableconstraint](timetableconstraint.png)
+![timetableconstraint](./timetableconstraint.png)
 
 
  - Minimize/Maximize idle time: The user can maximize or minimize the gap time between courses.
@@ -40,17 +40,17 @@ There are serveral preferences that the user can select to optimize the timetabl
  
 The timetable will return invalid and displays a message if the constraints are unreachable.
 
-![error2](error2.png)
+![error2](./error2.png)
 
 The user can also choose to lock certain course times. 
 
 When preferences are made, those times will not be changed.
 
-![lock1](lock1.png)
+![lock1](./lock1.png)
 
 after some preferences made:
 
-![lock2](lock2.png)
+![lock2](./lock2.png)
 
 
 ## Example Usage:
