@@ -13,15 +13,38 @@ The timetable planner allows students to enter their course load and get back a 
 
 ![timetable-journey](Timetable-journey.png)
 
-Minimize/Maximize idle time: The user can set the amount of time they want to stay at school between the classes.
+Once the user selects the courses from the Course Guide:
+![coursechosing](coursechosing.JPG)
 
-Lock course time: The user can lock the course time so it stays the same while doing other adjustments.
+Once the user views the timetable:
 
-Constraint days: 
+The timetable will display whether or not if the selected courses have a valid time, that is no conflict for all courses.
+
+ - Valid:
+![timetable](timetable.JPG)
+ - Invalid:
+![error1](error1.JPG)
+
+There are serveral preferences that the user can select to optimize the timetable:
+![timetableconstraint](timetableconstraint.JPG)
+
+
+ - Minimize/Maximize idle time: The user can maximize or minimize the gap time between courses.
  - Days off: The user can select the day(s) off so there will be no course appear on that day.
- - Start/end time: The user can chose their preference time to start the school or end the school
+ - Avoid Morning/Evening Class: The user can choose whether if they want to have courses in the morning or evening.
  
 The timetable will return invalid and displays a message if the constraints are unreachable.
+![error2](error2.JPG)
+
+The user can also choose to lock certain course times. 
+
+When preferences are made, those times will not be changed.
+
+![lock1](lock1.JPG)
+
+after some preferences made:
+![lock2](lock2.JPG)
+
 
 ## Example Usage:
 
