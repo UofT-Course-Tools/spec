@@ -17,7 +17,7 @@ Once the user selects the courses from the Course Guide:
 
 ![coursechosing](coursechosing.JPG)
 
-Once the user views the timetable:
+The user views the timetable:
 
 The timetable will display whether or not if the selected courses have a valid time, that is no conflict for all courses.
 
