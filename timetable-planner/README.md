@@ -14,6 +14,7 @@ The timetable planner allows students to enter their course load and get back a 
 ![timetable-journey](Timetable-journey.png)
 
 Once the user selects the courses from the Course Guide:
+
 ![coursechosing](coursechosing.JPG)
 
 Once the user views the timetable:
@@ -21,11 +22,15 @@ Once the user views the timetable:
 The timetable will display whether or not if the selected courses have a valid time, that is no conflict for all courses.
 
  - Valid:
+ 
 ![timetable](timetable.JPG)
+
  - Invalid:
+ 
 ![error1](error1.JPG)
 
 There are serveral preferences that the user can select to optimize the timetable:
+
 ![timetableconstraint](timetableconstraint.JPG)
 
 
@@ -34,6 +39,7 @@ There are serveral preferences that the user can select to optimize the timetabl
  - Avoid Morning/Evening Class: The user can choose whether if they want to have courses in the morning or evening.
  
 The timetable will return invalid and displays a message if the constraints are unreachable.
+
 ![error2](error2.JPG)
 
 The user can also choose to lock certain course times. 
@@ -43,6 +49,7 @@ When preferences are made, those times will not be changed.
 ![lock1](lock1.JPG)
 
 after some preferences made:
+
 ![lock2](lock2.JPG)
 
 
