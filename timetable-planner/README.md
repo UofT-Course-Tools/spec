@@ -1,6 +1,11 @@
+---
+sidebar: auto
+---
+
 # Timetable Planner
 
-A web app that helps UofT students plan their courses to generate their optimal timetable. 
+## Vision
+This component helps UofT students plan their courses to generate their optimal timetable. 
 
 The timetable planner allows students to enter their course load and get back a timetable that fits their needs. The vision for the timetable planner includes taking student preferences into account such as: 
 
@@ -11,31 +16,39 @@ The timetable planner allows students to enter their course load and get back a 
 
 ## Overview
 
-![courseguide_to_timetable](courseguide_to_timetable.png)
+![timetable-journey](./Timetable-journey.png)
 
-## Data Sources
+Once the user selects the courses from the Course Guide, the user views the timetable. 
 
-### 1. Course Selection API:
+The timetable will display whether or not if the selected courses have a valid time, that is no conflict for all courses.
 
-__Data Provided:__  *course code* and *meeting section* data from course selection. (refer to **Data Structures 1-2** for details). 
+ - Valid:
+ 
+![timetable](./timetable.png)
+
+ - Invalid:
+ 
+![error1](./error1.png)
+
+There are serveral preferences that the user can select to optimize the timetable:
+
+![timetableconstraint](./timetableconstraint.png)
 
 
-## Data Structures:
+ - Minimize/Maximize idle time: The user can maximize or minimize the gap time between courses.
+ - Days off: The user can select the day(s) off so there will be no course appear on that day.
+ - Avoid Morning/Evening Class: The user can choose whether if they want to have courses in the morning or evening.
+ 
+The timetable will return invalid and displays a message if the constraints are unreachable.
 
-### 1. Course Code: 
+![error2](./error2.png)
 
-``` json
-{
-    "code": string
-}
-```
+The user can also choose to lock certain course times. 
 
-### 2. Meeting Section: 
+When preferences are made, those times will not be changed.
 
-```json
-{
-    "times": [Time],
-    "size": Number,
-    "enrolment": Number
-}
-```
+![lock1](./lock1.png)
+
+after some preferences made:
+
+![lock2](./lock2.png)
