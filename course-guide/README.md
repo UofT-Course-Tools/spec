@@ -11,9 +11,9 @@ The Course Guide generates a list of recommend courses based on the student's ye
 
 ## Overview
 
-The user's journey through the course guide starts at them selecting their year and ends at them optimizing their timetable. 
+The course guide covers the program and course selection of the user's journey through our system. 
 
-![high-level-demonstration](./High_level_demonstration.png)
+![User Joruney](./user-journey.png)
 
 
 ### Program Selection

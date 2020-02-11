@@ -19,3 +19,18 @@ These tools were created by Googlers for Googlers. UofT students could make use 
 - Plan for courses based on course evaluation metrics that they care about
 - Write plugins to expand the core functionality with their creative ideas
 
+## Implementation
+
+The first areas of student experience we're looking to enhance are course selection and timetable planning.
+
+We envision the following user journey for a student:
+
+![User Journey](./user-journey.png)
+
+The two components we identified to build this system are the [Course Guide](/course-guide/) and the [Timetable Planner](/timetable-planner/)
+
+We then identified that the two components in our system required data that was scattered across various UofT web services. Some of this data had to be scraped, while others were available through APIs. 
+
+The third component that emerged was the [Unified Backend](/unified-backend/). This API would provide our apps with unified access to the scattered UofT course data. This API would also allow students to make use of the data to write plugins to expand the core functionality with their creative ideas. 
+
+
