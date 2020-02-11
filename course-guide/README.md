@@ -5,60 +5,33 @@ sidebar: auto
 # Course Guide
 
 ## Vision
-This web feature is designed to work with the UofT Course Tool. 
-The Course Guide component is destinate to help any freshman students to have a better understanding of how to select the right course.
+The Course Guide component helps students have a better understanding of what the right courses for them are.
 
-The Course Guide feature is able to generate a list of recommend courses based on the given years and programs from students.
-This feature helps the student to effectively engage to the other features we have for the UofT Course Tool web app.
+The Course Guide generates a list of recommend courses based on the student's year and programs from students.
 
 ## Overview
 
-This is a brief demonstration of how the user journey will be like when students try our web app, It shows how student need to start entering their year until finishing with a well optimized time table.
+The user's journey through the course guide starts at them selecting their year and ends at them optimizing their timetable. 
 
 ![high-level-demonstration](./High_level_demonstration.png)
 
 
-The course guide is construct by two feature:
+### Program Selection
 
-First: 
- - Program Selecting tool
+After a user selects their year, they're able to browse through the list of programs available to them, adding programs to their program cart as they see fit. 
+
+__User Journey Statechart__
 ![program-selecting-chart](./Program_Choosing_state.png)
 
-It allows the students to search their subject and browse through the detail of the program, ultimately added to their program cart.
-
-Here is a better demonstration of the app.
-
+__Program Selection Concept Design__
 ![program-selecting-figma](./figma_pic.png)
 
-As the picture showed, we are able to give the information on academic calendar and help the user to access it more conveniently.  
+### Course Selection
 
-Second:
+With the programs selected, the user now moves to the course selection stage. Here, the user can add courses to their course cart by exploring courses via the search bar or consulting our _Recommended Courses_ UI component's suggestions. 
 
- - Course Selecting tool
-
+__User Journey Statechart__
  ![course-selecting-chart](./Course_Selecting_State.png)
 
-Based on the previous program selected, we can collaborate with the backend to generate a list of recommend courses to select.
-
+__Course Selection Concept Design__
 ![course-selecting-figma](./figma_course_pic.png)
-
-So far we are unable to have any recommendation for higher years due to the messiness of the academic calendar, we can scrap the right information.
-## Components
-
-### Course Search Bar 
-
-__Data__ 
-
-Query: The current search query 
-
-__Methods__ 
-
-_search(query)_:  
-
-Searches the course DB for courses that match the query 
-
-Triggered on every input event (with a small debounce value) 
-
-__Sub-Components__
-
-Course Card 
