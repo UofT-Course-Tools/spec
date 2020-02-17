@@ -19,6 +19,10 @@ These tools were created by Googlers for Googlers. UofT students could make use 
 - Plan for courses based on course evaluation metrics that they care about
 - Write plugins to expand the core functionality with their creative ideas
 
+Fundamental problem we are trying to solve : 
+
+The current process to choose your courses and manaully create a schedule without any conflicts that fits your peferences can take days to perfect. With the help of this tool, we are making this process much faster and easier than before. Futhermore, this will improve UofT's reputation since this tool will modernize a crucuial part of a student's life.
+
 ## Implementation
 
 The first areas of student experience we're looking to enhance are course selection and timetable planning.
