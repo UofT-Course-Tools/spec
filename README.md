@@ -21,8 +21,10 @@ These tools were created by Googlers for Googlers. UofT students could make use 
 
 Fundamental problem we are trying to solve : 
 
-The current process to choose your courses and manually create a schedule without any conflicts that fits your preferences can take days to perfect. 
+The current process to choose your courses and manually create a schedule without any conflicts that fits your preferences can take days to perfect.
+ 
 With the help of this tool, we are making this process much **faster** and **easier** than before. 
+
 Futhermore, this will improve UofT's reputation since this tool will modernize a crucial part of a student's life.
 
 ## Implementation
